@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/datepicker.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./logo-uns-biru.webp" type="image/x-icon">
+    <title>APLIKASI ANALISIS RISIKO KECELAKAAN KERJA PADA PROYEK</title>
+</head>
+<body>
+    <div class="flex flex-col px-60 bg-white pt-16 mb-20">
+        <div class="w-[542px] flex">
+            <img class="w-[110px] h-[110px] left-0 top-0 rounded-full" src="/static/logo-uns-biru.webp" />
+            <div class="w-[356px] h-[120px] pl-5 text-black text-[24px] font-bold">APLIKASI
+                ANALISIS RISIKO KECELAKAAN KERJA PADA PROYEK </div>
+        </div>
+        <div class="w-48 h-[40px] bg-cyan-300 rounded-bl-[50px] right-[0px] top-[0] fixed flex pl-12 pr-2 py-1 place-content-between">
+            <div class="h-[45px] pl-2 text-black text-[15px] font-normal text-[17px] font-semibold">Responden</div>
+        </div>
+        <div class="text-black text-[26px] font-normal pt-12 pb-4">Form Penilaian</div>
+        <div class="flex">
+            <div class="flex-col">
+                <div class="w-[350px] h-[62px]">
+                    <div class=" text-black text-[18px] font-normal">E-mail </div>
+                    <input placeholder="Masukkan Email Anda!" class="w-[350px] h-[34px] bg-zinc-300 rounded-lg pl-3 focus:bg-zinc-200"></input>
+                </div>
+                <div class="w-[350px] h-[62px]">
+                    <div class=" text-black text-[18px] font-normal">Nama</div>
+                    <input placeholder="Masukkan Nama Anda!" class="w-[350px] h-[34px] bg-zinc-300 rounded-lg pl-3 focus:bg-zinc-200"></input>
+                </div>
+                <div class="w-[350px] h-[63px]">
+                    <div class=" text-black text-[18px] font-normal">Umur</div>
+                    <input placeholder="Masukkan Umur Anda!" class="w-[350px] h-[34px]  bg-zinc-300 rounded-lg pl-3 focus:bg-zinc-200"></input>
+                </div>
+                <div class="w-[350px] h-16">
+                    <div class=" text-black text-[18px] font-normal">Instansi</div>
+                    <input placeholder="Masukkan Asal Instansi Anda!" class="w-[350px] h-[34px] bg-zinc-300 rounded-lg pl-3 focus:bg-zinc-200"></input>
+                </div>
+                <div class="w-[350px] h-16">
+                    <div class=" text-black text-[18px] font-normal">Jabatan</div>
+                    <input placeholder="Masukkan Jabatan Anda pada Instansi!" class="w-[350px] h-[34px] bg-zinc-300 rounded-lg pl-3 focus:bg-zinc-200"></input>
+                </div>
+            </div>
+            <div>
+                <div class="flex-col mx-20">
+                    <div class="w-[31rem] h-[8rem]">
+                        <div class="w-full mb-5 bg-zinc-300 py-1 border border-gray-500 text-[16px] font-semibold text-center">WBS</div>
+                        <div class="w-[31rem] p-5 bg-neutral-50 border border-black mb-10">
+                            <div class="w-full text-center text-black text-[18px] mb-5 font-bold">1.1 Risiko Kecelakaan Kerja pada saat pekerjaan pemasangan benchmark</div>
+                            <label for="steps-range" class="block mb-2 text-sm font-medium text-gray-900">Probability</label>
+                            <input id="steps-range" type="range" min="0" max="5" value="2.5" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <div class="py-1 flex flex-wrap place-content-between px-1">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <label for="steps-range" class="block mb-2 text-sm font-medium text-gray-900">Impact</label>
+                            <input id="steps-range" type="range" min="0" max="5" value="2.5" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <div class="py-1 flex flex-wrap place-content-between px-1">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="w-[31rem] p-5 bg-neutral-50 border border-black mb-10">
+                            <div class="w-full text-center text-black text-[18px] mb-5 font-bold">1.2 Risiko kecelakaan kerja pada saat pekerjaan pengukuran kerangka kontrol vertikal dan horizontal</div>
+                            <label for="steps-range" class="block mb-2 text-sm font-medium text-gray-900">Probability</label>
+                            <input id="steps-range" type="range" min="0" max="5" value="2.5" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <div class="py-1 flex flex-wrap place-content-between px-1">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <label for="steps-range" class="block mb-2 text-sm font-medium text-gray-900">Impact</label>
+                            <input id="steps-range" type="range" min="0" max="5" value="2.5" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <div class="py-1 flex flex-wrap place-content-between px-1">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="w-[31rem] p-5 bg-neutral-50 border border-black mb-10">
+                            <div class="w-full text-center text-black text-[18px] mb-5 font-bold">1.3 Risiko kecelakaan kerja pada saat pekerjaan pengukuran kerangka kontrol vertikal dan horizontal</div>
+                            <label for="steps-range" class="block mb-2 text-sm font-medium text-gray-900">Probability</label>
+                            <input id="steps-range" type="range" min="0" max="5" value="2.5" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <div class="py-1 flex flex-wrap place-content-between px-1">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <label for="steps-range" class="block mb-2 text-sm font-medium text-gray-900">Impact</label>
+                            <input id="steps-range" type="range" min="0" max="5" value="2.5" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <div class="py-1 flex flex-wrap place-content-between px-1">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>

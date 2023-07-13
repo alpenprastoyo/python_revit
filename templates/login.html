@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="./logo-uns-biru.webp" type="image/x-icon">
+<title>APLIKASI ANALISIS RISIKO KECELAKAAN KERJA PADA PROYEK</title>
+</head>
+<body>
+<div class="flex flex-col items-center bg-white">
+<div class="w-[474px] h-[120px] mt-28 flex">
+    <img class="w-[110px] h-[110px] left-0 top-0 rounded-full" src="/static/logo-uns-biru.webp" />
+    <div class="w-[356px] h-[120px] pl-5 text-black text-[24px] font-bold">APLIKASI
+        ANALISIS RISIKO KECELAKAAN KERJA PADA PROYEK </div>
+</div>
+{% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+    <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+    <span class="font-medium">{{ message }}</span>
+    </div>
+    {% else %}
+    <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+        <span class="font-medium">{{ message }}</span>
+        </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+<form action="/login" method="POST">
+    <div class="w-[434.89px] py-12">
+    <div class="w-[434.89px] h-[68px]">
+        <div class="text-black text-[20px] font-medium">E-mail </div>
+        <input name="username" placeholder="Masukan email anda!" class="w-full p-3 font-medium h-10 bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+    </div>
+    <div class="w-[434.89px] h-[67px]">
+        <div class="text-black text-[20px] font-medium">Password</div>
+        <input name="password" type="password" placeholder="Masukan password anda!" class="w-[434.89px] p-3 h-10 font-medium bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+    </div>
+</div>
+<div class="flex flex-col items-center">
+    <button type="submit" class="w-[136px] h-[35px] bg-sky-500 hover:bg-blue-500 rounded-xl text-center text-white text-[20px]">
+        Masuk
+    </button>
+</form>
+
+    <div class="mt-2 w-[429px] h-[17px] flex items-center">
+        <div class="w-[180px] h-[0px] border border-black">
+        </div>
+        <div class="text-black text-[16px] font-normal px-5">atau</div>
+        <div class="w-[180px] h-[0px] border border-black">
+        </div>
+    </div>
+    <a href="/register" class="mt-2 w-[136px] h-[35px] bg-sky-500 hover:bg-blue-500 rounded-xl text-center text-white text-[20px]">
+        Daftar
+    </a>
+    <a href="/responden" class="w-[136px] h-[35px] bg-sky-500 hover:bg-blue-500 rounded-xl text-center text-white text-[20px] mt-2">
+        Responden
+    </a>  
+</div>
+</div>
+</body>
+</html>

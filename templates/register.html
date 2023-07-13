@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="./logo-uns-biru.webp" type="image/x-icon">
+<title>APLIKASI ANALISIS RISIKO KECELAKAAN KERJA PADA PROYEK</title>
+</head>
+
+<body>
+<div class="flex justify-center">
+    <div class="w-[1280px] h-[720px] flex flex-col items-center bg-white">
+        <div class="h-[120px] mt-16 mb-8 justify-self-center flex">
+            <img class="w-[110px] h-[110px] left-0 top-0 rounded-full" src="/static/logo-uns-biru.webp" />
+            <div class="w-[330px] h-[120px] pl-5 text-black text-[24px] font-bold">APLIKASI
+                ANALISIS RISIKO KECELAKAAN KERJA PADA PROYEK </div>
+        </div>
+        <form action="/register" method="POST">
+        <div class="w-[434.89px]">
+            {% with messages = get_flashed_messages(with_categories=true) %} {% if
+                messages %} {% for category, message in messages %} {% if category ==
+                'error' %}
+                <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                <span class="font-medium">{{ message }}</span>
+                </div>
+                {% else %}
+                <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                    <span class="font-medium">{{ message }}</span>
+                    </div>
+                {% endif %} {% endfor %} {% endif %} {% endwith %}
+            
+            <div class="w-[434.89px] h-[68px] mb-2">
+                <div class="text-black text-[20px] font-medium">E-mail</div>
+                <input name="username" placeholder="Masukan email anda!"
+                    class="w-[434.89px] p-3 font-medium h-10 bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+            </div>
+            <div class="w-[434.89px] h-[68px] mb-2">
+                <div class="text-black text-[20px] font-medium">Nama</div>
+                <input name="name" placeholder="Masukan nama lengkap anda!"
+                    class="w-[434.89px] p-3 font-medium h-10 bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+            </div>
+            <div class="w-[434.89px] h-[68px] mb-2">
+                <div class="text-black text-[20px] font-medium">Umur</div>
+                <input name="age" type="number" placeholder="Masukan umur (tahun) anda!"
+                    class="w-[434.89px] p-3 font-medium h-10 bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+            </div>
+            <div class="w-[434.89px] h-[68px] mb-2">
+                <div class="text-black text-[20px] font-medium">Instansi</div>
+                <input name="institute" placeholder="Masukan asal instansi (Perusahaan/Universitas) anda!"
+                    class="w-[434.89px] p-3 font-medium h-10 bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+            </div>
+            <div class="w-[434.89px] h-[67px] mb-2">
+                <div class="text-black text-[20px] font-medium">Password</div>
+                <input name="password" type="password" placeholder="Masukan password anda!"
+                    class="w-[434.89px] p-3 h-10 font-medium bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+            </div>
+            <div class="w-[434.89px] h-[67px]">
+                <div class="text-black text-[20px] font-medium">Re-Password</div>
+                <input name="confirm" type="password" placeholder="Masukan ulang password anda!"
+                    class="w-[434.89px] p-3 h-10 font-medium bg-zinc-300 focus:bg-zinc-200 rounded-lg"></input>
+            </div>
+        </div>
+        <button type="submit"
+            class="w-[136px] h-[35px] bg-sky-500 hover:bg-blue-500 rounded-xl text-center text-white text-[20px] mt-8 pb-1">
+            Daftar
+    </button>   
+</form>
+
+    </div>
+</div>
+
+</body>
+
+</html>
